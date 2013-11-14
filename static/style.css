@@ -1,0 +1,30 @@
+html {
+	font-size: 14px;
+}
+
+#result {
+	margin: 30px;
+}
+
+#result .btn {
+	display: block;
+	margin-top: 10px;
+}
+
+span {
+	background: #FF0;
+	cursor: pointer;
+}
+
+input[type="submit"] {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+textarea {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	resize: none;
+}

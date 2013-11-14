@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body_id %}result{% endblock body_id %}
+
+{% block body_content %}
+
+{% autoescape off %}
+	{{ result }}
+{% endautoescape %}
+
+<a href="/" class="btn btn-primary">Corrigir outro texto</a>
+
+{% endblock %}

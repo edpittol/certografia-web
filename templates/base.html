@@ -1,0 +1,17 @@
+{% extends 'djfrontend/skeleton.html' %}
+
+{% load djfrontend %}
+{% load staticfiles %}
+
+{% block head_css %}
+{% djfrontend_normalize '1.1.1' %}
+{% djfrontend_twbs_css '3.0.0' %}
+{% djfrontend_h5bp_css '4.2.0' %}
+<link rel="stylesheet" type="text/css" href="{% static "style.css" %}" />
+{% endblock head_css %}
+
+{% block body_js %}
+{{ block.super }}
+{% djfrontend_twbs_js tooltip %}
+<script src="{% static "js/script.js" %}"></script>
+{% endblock body_js %}
